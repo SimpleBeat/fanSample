@@ -12,5 +12,5 @@ Here is v0.1 mockup screen:
 
 And v0.1 mockup video:
 
-![](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/screenRec.mp4)
+https://user-images.githubusercontent.com/1903231/149674869-9aa966af-163c-4c5a-a4ee-9fa5559830c6.mp4
 
