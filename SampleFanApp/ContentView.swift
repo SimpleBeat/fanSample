@@ -158,27 +158,29 @@ struct ContentView: View {
                     Spacer()
                     Text("Music")
                 }
+                .padding(.horizontal)
                 .foregroundColor(.white)
                 .opacity(0.8)
                 
                 ZStack(alignment: .top) {
                     
+                    Text("|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |")
+                        .foregroundColor(.white)
+                        .opacity(0.2)
+                        .frame(height: 50)
+                        .font(.title3)
+                    
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(alignment: .center) {
                             Spacer()
-                            Text("|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |")
-                                .foregroundColor(.white)
+                            Text("             |               ")
+                                .foregroundColor(.purple)
+                                .font(.custom("Helvetica", size: 50))
                                 .opacity(0.4)
-                                .frame(height: 50)
-                                .font(.title3)
                             Spacer()
                         }
                     }
                     
-                    Text("|")
-                        .foregroundColor(.purple)
-                        .font(.custom("Helvetica", size: 50))
-                        .opacity(0.4)
                 }
             }
             .padding(.vertical)
