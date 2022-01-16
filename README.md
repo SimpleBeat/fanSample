@@ -8,9 +8,9 @@ I plan to add sounds, music, and animations during the following days. I hope to
 
 Here is v0.1 mockup screen:
 
-[](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/appScreen.png)!
+![](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/appScreen.png)
 
 And v0.1 mockup video:
 
-[](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/screenRec.mp4)!
+![](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/screenRec.mp4)
 
