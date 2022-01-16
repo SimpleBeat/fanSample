@@ -6,5 +6,11 @@ I love to create mockup apps with SwiftUI, it is so much fun, so when I saw the 
 
 I plan to add sounds, music, and animations during the following days. I hope to have a working prototype in a week or so, and show it to the Slumber's recruiting team. It just could be that they'd want someone who has already done the first step in actually building their app.
 
-Here are a couple of screens:
+Here is v0.1 mockup screen:
+
+[](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/appScreen.png)!
+
+And v0.1 mockup video:
+
+[](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/screenRec.mp4)!
 
