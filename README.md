@@ -18,3 +18,6 @@ v0.2
 - added fan on/off on tap
 
 Here's the most recent video:
+
+https://user-images.githubusercontent.com/1903231/149762845-2b48742c-5c4c-42f2-b1ff-4e2e38b63ff9.mp4
+
