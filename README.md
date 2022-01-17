@@ -10,4 +10,11 @@ Here is v0.1 mockup screen:
 
 ![](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/appScreen.png)
 
-And v0.1 mockup video:
+
+Jan.17 UPDATE
+v0.2
+
+- added spinning fan blades feature
+- added fan on/off on tap
+
+Here's the most recent video:
