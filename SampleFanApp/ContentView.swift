@@ -9,14 +9,42 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var favoritesToggle = false
+    private var rotationSpeeds: [Double] = [0.35]
+    @State private var bladeSpin = false
+    @State private var fanIsOn = false
+    @State private var currentSpeed = 0
     
     var body: some View {
         
         VStack() {
             ZStack(alignment: .top) {
-                Image("fan")
+                Image("fanBackground")
                     .resizable()
                     .scaledToFit()
+                
+                VStack() {
+                    Spacer()
+                    
+                    Image("fanBlade1")
+                        .resizable()
+                        .frame(width: 260, height: 260)
+                        .onTapGesture {
+                            fanIsOn.toggle()
+                            
+                            if fanIsOn {
+                                bladeSpin = true
+                            } else {
+                                bladeSpin = false
+                            }
+                            
+                        }
+                        .rotationEffect(.degrees(fanIsOn ? 360 : 0))
+                        .animation(fanIsOn ? .linear(duration: rotationSpeeds[currentSpeed]).repeatForever(autoreverses: false) : .linear(duration: rotationSpeeds[currentSpeed]), value: bladeSpin)
+                    
+                    Spacer()
+                    Spacer()
+                }
+                .padding()
                     
                 VStack() {
                     HStack(alignment: .top, spacing: 10) {
