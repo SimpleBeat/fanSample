@@ -11,6 +11,3 @@ Here is v0.1 mockup screen:
 ![](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/appScreen.png)
 
 And v0.1 mockup video:
-
-https://user-images.githubusercontent.com/1903231/149674869-9aa966af-163c-4c5a-a4ee-9fa5559830c6.mp4
-
