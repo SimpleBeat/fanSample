@@ -6,13 +6,43 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     @State private var favoritesToggle = false
-    private var rotationSpeeds: [Double] = [0.35]
+    private let rotationSpeed = 0.35
     @State private var bladeSpin = false
     @State private var fanIsOn = false
     @State private var currentSpeed = 0
+    
+    @State private var fanPlayer: AVAudioPlayer!
+    @State private var musicPlayer: AVAudioPlayer!
+    
+    func playSounds(_ soundFileName : String) {
+        guard let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: nil) else {
+            fatalError("Unable to find \(soundFileName) in bundle")
+        }
+        
+        do {
+            fanPlayer = try AVAudioPlayer(contentsOf: soundURL)
+        } catch {
+            // sound error
+        }
+        fanPlayer.play()
+    }
+    
+    func playMusic(_ soundFileName : String) {
+        guard let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: nil) else {
+            fatalError("Unable to find \(soundFileName) in bundle")
+        }
+        
+        do {
+            musicPlayer = try AVAudioPlayer(contentsOf: soundURL)
+        } catch {
+            // sound error
+        }
+        musicPlayer.play()
+    }
     
     var body: some View {
         
@@ -33,13 +63,15 @@ struct ContentView: View {
                             
                             if fanIsOn {
                                 bladeSpin = true
+                                playSounds("fanOn.mp3")
                             } else {
                                 bladeSpin = false
+                                playSounds("fanOff.mp3")
                             }
                             
                         }
                         .rotationEffect(.degrees(fanIsOn ? 360 : 0))
-                        .animation(fanIsOn ? .linear(duration: rotationSpeeds[currentSpeed]).repeatForever(autoreverses: false) : .linear(duration: rotationSpeeds[currentSpeed]), value: bladeSpin)
+                        .animation(fanIsOn ? .linear(duration: rotationSpeed).repeatForever(autoreverses: false) : .linear(duration: rotationSpeed), value: bladeSpin)
                     
                     Spacer()
                     Spacer()
@@ -114,6 +146,17 @@ struct ContentView: View {
                             .scaledToFit()
                             .frame(width: 180, height: 100)
                             .padding(.vertical)
+                            .onTapGesture {
+                                if musicPlayer == nil {
+                                    playMusic("music1.mp3")
+                                } else {
+                                    if musicPlayer.isPlaying {
+                                        musicPlayer.stop()
+                                    } else {
+                                        playMusic("music1.mp3")
+                                    }
+                                }
+                            }
                         
                         Text("Soothe")
                             .foregroundColor(.white)
@@ -216,9 +259,12 @@ struct ContentView: View {
             Spacer()
         }
         .background(Color(red: 0, green: 0, blue: 36/255))
+        
     }
+    
 
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
