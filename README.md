@@ -17,6 +17,11 @@ v0.2
 - added spinning fan blades feature
 - added fan on/off on tap
 
+Jan.20 UPDATE
+- The fan sound has been added (it's horrible though, need to find a better one)
+- The sample music has been added (1min long) to the first soundscape tile
+
+
 Here's the most recent video:
 
 https://user-images.githubusercontent.com/1903231/149762845-2b48742c-5c4c-42f2-b1ff-4e2e38b63ff9.mp4
