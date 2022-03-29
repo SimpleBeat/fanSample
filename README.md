@@ -1,26 +1,20 @@
 # Bedtime Fan
 
-Here's a quick mock prototype of a Bedtime Fan app for Slumber.
+Here's a quick mock prototype of a Fan app.
 
-I love to create mockup apps with SwiftUI, it is so much fun, so when I saw the design screenshot on Slumber's website, I could, I just couldn't pass it up! After doing the initial coding, which took me about 2 hours, I started with adding the real functionality (simple scrolling, toggles, buttons).
-
-I plan to add sounds, music, and animations during the following days. I hope to have a working prototype in a week or so, and show it to the Slumber's recruiting team. It just could be that they'd want someone who has already done the first step in actually building their app.
+After doing the initial UI coding, which took me about 2 hours, I started adding the real functionality (simple scrolling, toggles, buttons).
 
 Here is v0.1 mockup screen:
 
 ![](https://github.com/SimpleBeat/bedtimeFanSample/blob/main/media/appScreen.png)
 
-
-Jan.17 UPDATE
-v0.2
-
+*Jan.17 UPDATE*
 - added spinning fan blades feature
 - added fan on/off on tap
 
-Jan.20 UPDATE
+*Jan.20 UPDATE*
 - The fan sound has been added (it's horrible though, need to find a better one)
 - The sample music has been added (1min long) to the first soundscape tile
-
 
 Here's the most recent video:
 
